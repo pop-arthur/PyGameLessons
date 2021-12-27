@@ -159,13 +159,13 @@ def move(player, movement):
         if y > 0 and level_map[y - 1][x] != "#":
             player.move(x, y - 1)
     if movement == "down":
-        if y < level_y - 1 and level_map[y + 1][x] != "#":
+        if y < level_y and level_map[y + 1][x] != "#":
             player.move(x, y + 1)
     if movement == "left":
         if x > 0 and level_map[y][x - 1] != "#":
             player.move(x - 1, y)
     if movement == "right":
-        if x < level_x - 1 and level_map[y][x + 1] != "#":
+        if x < level_x and level_map[y][x + 1] != "#":
             player.move(x + 1, y)
 
 
